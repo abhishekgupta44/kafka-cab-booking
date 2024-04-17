@@ -8,17 +8,17 @@
  1. Download Apache kafka
  2. Go inside kafka folder
  3. Start zookeeper server:
-  Run on cmd `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
+   - Run on cmd `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
  4. Start Kafka server:
-    On new cmd `.\bin\windows\kafka-server-start.bat .\config\server.properties`
+    - On new cmd `.\bin\windows\kafka-server-start.bat .\config\server.properties`
  5. Create a topic to store events on kafka server:
-    On new cmd `\bin\windows>kafka-topics.bat --create --bootstrap-server localhost:9092 --topic test`
+    - On new cmd `\bin\windows>kafka-topics.bat --create --bootstrap-server localhost:9092 --topic test`
  6. To see the topic/describe the topic:
-    `\bin\windows>kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic test`
+    - `\bin\windows>kafka-topics.bat --describe --bootstrap-server localhost:9092 --topic test`
  7. Start the producer:
-    On new cmd `\bin\windows>kafka-console-producer.bat --topic test --bootstrap-server localhost:9092`
+    - On new cmd `\bin\windows>kafka-console-producer.bat --topic test --bootstrap-server localhost:9092`
  8. Start the consumer:
-    On new cmd `\bin\windows>kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning`
+    - On new cmd `\bin\windows>kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning`
 
  - Note: Don't close any of the cmd commands
 
